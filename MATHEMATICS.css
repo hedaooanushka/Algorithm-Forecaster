@@ -1,0 +1,92 @@
+
+#heromath {
+	width: 100%;
+	height: 92vh;
+	background-image: url(https://www.youcubed.org/wp-content/uploads/2017/03/beautiful-math-1.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+#child1 {
+	width: 50%;
+	height: 92vh;
+	background: rgba(86, 86, 86, 0.3);
+	position: absolute;
+	left: 0;
+	right: 0;
+	backdrop-filter: blur(10px);
+}
+#child2 {
+	transform: translate(840px, 60px);
+	width: 620px;
+	height: 300px;
+}
+#click1, #click2, #click3, #click4 {
+	background: transparent;
+	border: solid 2px white;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+	padding: 5px 15px;
+	margin-left: 20px;
+	transform: translate(-3px, 20px);
+}
+#click5 {
+	background: transparent;
+	border: solid 2px white;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+	padding: 5px 15px;
+	margin-left: 20px;
+	transform: translate(-3px, 20px);
+}
+.q1 {
+	background: transparent;
+	border: solid 2px white;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+	padding: 5px 15px;
+	margin-left: 20px;
+}
+.search1 {
+	padding: 8px 12px;
+	color: #333333;
+	background-color: #eeeeee;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.search1:focus, .search1:hover {
+	outline: none;
+	border: 1px solid #bbbbbb;
+}
+.search1 option {
+	background-color: white;
+}
+select, #yo{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+#domain {
+	letter-spacing: 3px;
+	color: white; 
+	font-size: 25px; 
+	margin: 30px 300px;
+}
+form {
+	margin: 20px 100px;
+    transform: translate(-10px, 50px);
+}
+.ans {
+	transform: translate(220px, 80px);
+	color: white;
+    font-size: 30px;
+}

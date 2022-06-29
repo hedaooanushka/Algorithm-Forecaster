@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="MACHINE.css">
+
+	<title>Machine Learning</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="ALGORITHM.html" style="letter-spacing: 4px;"><i class="fa fa-code" aria-hidden="true"></i> ALGORITHM FORECASTER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="highlight">
+      <li class="nav-item">
+        <a class="nav-link" href="MACHINE.html" style="font-weight: bold; color: white;">Machine Learning <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MATHEMATICS.html" id="m">Mathematics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CRYPTOGRAPHY.html" id="c">Cryptography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SEARCHING.html" id="se">Searching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SORTING.html" id="so">Sorting</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="heromachine">
+  <div id="child1">
+      <p id="domain" data-text="[Neon_Light]"> MACHINE LEARNING </p>
+	<div class="step step-1">
+        <p> Do you want to predict future data points? </p>
+        <input type="button" class="button" value="yes" onclick="buttonclick(2)"/> 
+        <input type="button" class="button" value="no" onclick="buttonclick(3)"/> 
+    </div>
+    <div class="step step-2">
+       <br> <p> You want to predict categories or values? </p>
+        <input type="button" class="button" value="Categories" onclick="buttonclick(4)"/> 
+        <input type="button" class="button" value="Values" onclick="buttonclick(5)"/> 
+    </div>
+    <div class="step step-3">
+        <br><p> K-means </p>
+    </div>
+    <div class="step step-4">
+        <br><p> What is the number of categories? </p>
+        <input type="button" class="button" value="Two" onclick="buttonclick(24)"/> 
+        <input type="button" class="button" value="More than Two" onclick="buttonclick(7)"/> 
+    </div>
+    <div class="step step-5">
+        <br><p>Is the data in rank ordered categories? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(8)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(9)"/> 
+    </div>
+    <div class="step step-24">
+        <br><p>Is one of the categories rare? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(6)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(25)"/> 
+    </div>
+    <div class="step step-6">
+        <br><p> How many observations do you have in your dataset? </p>
+        <input type="button" class="button" value="More than 100K" onclick="buttonclick(10)"/> 
+        <input type="button" class="button" value="Less than 100K" onclick="buttonclick(11)"/> 
+    </div>
+    <div class="step step-7">
+        <br><p> Do you prefer classifier built from more than 1 two class classifiers? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(25)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(13)"/> 
+    </div>
+    <div class="step step-8">
+        <br><p> Ordinal Regression </p>
+    </div>
+    <div class="step step-9">
+        <br><p> Do you want to predict event counts? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(14)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(15)"/> 
+    </div>
+    <div class="step step-10">
+        <br><p> PCA based anomaly </p> 
+    </div>
+    <div class="step step-11">
+        <br><p> One Class SVM </p>
+    </div>
+    <!-- <div class="step step-12">
+        <br><p> One-v-All Multiclass </p>         
+    </div> -->
+    <div class="step step-13">
+        <br><p> Do you prefer explainable class boundaries? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(16)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(17)"/> 
+    </div>
+    <div class="step step-14">
+        <br><p> Poission Regression </p>
+    </div>
+    <div class="step step-15">
+        <br><p> What do you want to predict? </p>
+        <input type="button" class="button" value="Single Values" onclick="buttonclick(18)"/> 
+        <input type="button" class="button" value="Distribution" onclick="buttonclick(19)"/> 
+    </div>
+    <div class="step step-16">
+        <br><p> Multiclass Decision Forest</p>
+        <p>Multiclass Decision Jungle </p>
+    </div>
+    <div class="step step-17">
+        <br><p> Multiclass Logistic Regression</p> 
+        <p>If you prefer performane over training time and all features are numerical:</p>
+        <p> Try, Multiclass Neural Network</p>
+    </div>
+    <div class="step step-18">
+        <br><p> Is linear approximation okay? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(20)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(21)"/> 
+    </div>
+    <div class="step step-19">
+        <br><p> Fast Forest Quantile Regression</p>
+    </div>
+    <div class="step step-20">
+        <br><p> Linear Regression </p>
+        <p> If your data points are statistically independent: </p> 
+        <p> Try, Bayesian Linear Regression</p>
+    </div>
+    <div class="step step-21">
+        <br><p> Do you prefer explainable class boundaries? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(22)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(23)"/> 
+    </div>
+    <div class="step step-22">
+        <br><p> Decision Forest Regression </p>
+        <p> If you have overlapping features:</p>
+        <p> Try, Boosted Decision Tree Regression </p> 
+    </div>
+    <div class="step step-23">
+        <br><p> Neural Network Regression </p> 
+    </div>
+    <div class="step step-25">
+        <br><p> How many No. of observations do you have in your dataset? </p>
+        <input type="button" class="button" value="More than 100K" onclick="buttonclick(26)"/> 
+        <input type="button" class="button" value="Less than 100K" onclick="buttonclick(27)"/> 
+    </div>
+    <div class="step step-26">
+        <br><p> What do you prefer? </p>
+        <input type="button" class="button" value="Speed" onclick="buttonclick(28)"/> 
+        <input type="button" class="button" value="Accuracy" onclick="buttonclick(29)"/> 
+    </div>
+    <div class="step step-27">
+        <br><p> Two Class SVM </p>
+        <p> If accuracy is good, but you want it faster:</p>
+        <p> Try, Locally Deep SVM</p>
+    </div>
+    <div class="step step-28">
+        <br><p> Two Class Averaged Perception </p>
+    </div>
+    <div class="step step-29">
+        <br><p> Do you prefer expalinable class boundaries? </p>
+        <input type="button" class="button" value="Yes" onclick="buttonclick(30)"/> 
+        <input type="button" class="button" value="No" onclick="buttonclick(31)"/> 
+    </div>
+    <div class="step step-30">
+        <br><p> Two Class Decision Forest </p>
+        <p> Two Forest Decision Jungle</p>
+        <p> If you have overlapping features:</p>
+        <p> Try, Two Class Boosted Decision Tree</p> 
+    </div>
+    <div class="step step-31">
+        <br><p> Two Class Logistic Regression </p><br>
+        <p> If you prefer performance over training time and all features are numerical:</p>
+        <p> Try, Two Class Neural Network</p><br>
+        <p> If your data points are statiscally independent:</p>
+        <p> Try, Two Class Bayes Point Machine</p>       
+    </div>
+</div>
+
+<div id="child2">
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-3">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">K Means</h5>
+          <p class="card-text"> k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells. k-means clustering minimizes within-cluster variances (squared Euclidean distances), but not regular Euclidean distances, which would be the more difficult Weber problem: the mean optimizes squared errors, whereas only the geometric median minimizes Euclidean distances. For instance, better Euclidean solutions can be found using k-medians and k-medoids.<br>
+            The most common algorithm uses an iterative refinement technique. Due to its ubiquity, it is often called "the k-means algorithm"; it is also referred to as Lloyd's algorithm, particularly in the computer science community. It is sometimes also referred to as "naive k-means", because there exist much faster alternatives.<br>
+            The algorithm has a loose relationship to the k-nearest neighbor classifier, a popular machine learning technique for classification that is often confused with k-means due to the name. Applying the 1-nearest neighbor classifier to the cluster centers obtained by k-means classifies new data into the existing clusters. This is known as nearest centroid classifier or Rocchio algorithm.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-8">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Ordinal Regression</h5>
+          <p class="card-text"> In statistics, ordinal regression (also called "ordinal classification") is a type of regression analysis used for predicting an ordinal variable, i.e. a variable whose value exists on an arbitrary scale where only the relative ordering between different values is significant. It can be considered an intermediate problem between regression and classification. Examples of ordinal regression are ordered logit and ordered probit. Ordinal regression turns up often in the social sciences, for example in the modeling of human levels of preference (on a scale from, say, 1–5 for "very poor" through "excellent"), as well as in information retrieval. In machine learning, ordinal regression may also be called ranking learning.<br>
+            Ordinal regression can be performed using a generalized linear model (GLM) that fits both a coefficient vector and a set of thresholds to a dataset.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-10">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">PCA Based Anomaly</h5>
+          <p class="card-text"> In data analysis, anomaly detection (also outlier detection)[1] is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.[1] Typically the anomalous items will translate to some kind of problem such as bank fraud, a structural defect, medical problems or errors in a text. Anomalies are also referred to as outliers, novelties, noise, deviations and exceptions.<br>
+            Principal component analysis (PCA) is the process of computing the principal components and using them to perform a change of basis on the data, sometimes using only the first few principal components and ignoring the rest.<br>
+
+PCA is used in exploratory data analysis and for making predictive models. It is commonly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-11">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">One Class SVM</h5>
+          <p class="card-text"> The Support Vector Method For Novelty Detection by Schölkopf et al. basically separates all the data points from the origin (in feature space F) and maximizes the distance from this hyperplane to the origin. This results in a binary function which captures regions in the input space where the probability density of the data lives. By just providing the normal training data, an algorithm creates a (representational) model of this data. If newly encountered data is too different, according to some measurement, from this model, it is labeled as out-of-class. <bbr>
+            To summarise, it separates two classes using a hyperplane with the largest possible margin.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-14">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Poission Regression</h5>
+          <p class="card-text"> In statistics, Poisson regression is a generalized linear model form of regression analysis used to model count data and contingency tables. Poisson regression assumes the response variable Y has a Poisson distribution, and assumes the logarithm of its expected value can be modeled by a linear combination of unknown parameters. A Poisson regression model is sometimes known as a log-linear model, especially when used to model contingency tables. <br>
+            Poisson regression may be appropriate when the dependent variable is a count, for instance of events such as the arrival of a telephone call at a call centre.[1] The events must be independent in the sense that the arrival of one call will not make another more or less likely, but the probability per unit time of events is understood to be related to covariates such as time of day.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-16">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Multiclass Decision Forest</h5>
+          <p class="card-text"> The decision forest algorithm is an ensemble learning method for classification. The algorithm works by building multiple decision trees and then voting on the most popular output class. ... Decision trees in general are non-parametric models, meaning they support data with varied distributions.<br>
+            Decision trees have many advantages:
+
+<ul><li>They can represent non-linear decision boundaries.</li>
+
+<li>They are efficient in computation and memory usage during training and prediction.</li>
+
+<li>They perform integrated feature selection and classification.</li>
+
+<li>They are resilient in the presence of noisy features.</li></ul><br>
+
+            <h5>Multiclass Decision Jungle</h5>
+            Decision jungles are a recent extension to decision forests. A decision jungle consists of an ensemble of decision directed acyclic graphs (DAGs).
+Accuracy, small memory footprint<br>
+Decision jungles have the following advantages:
+
+<ul><li>By allowing tree branches to merge, a decision DAG typically has a lower memory footprint and a better generalization performance than a decision tree, albeit at the cost of a somewhat higher training time.</li>
+
+<li>Decision jungles are non-parametric models, which can represent non-linear decision boundaries.</li>
+
+<li>They perform integrated feature selection and classification and are resilient in the presence of noisy features.</li></ul>
+
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-17">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Multiclass Logistic Regression</h5>
+          <p class="card-text"> Multiclass classification with logistic regression can be done either through the one-vs-rest scheme in which for each class a binary classification problem of data belonging or not to that class is done, or changing the loss function to cross- entropy loss. ... By default, multi_class is set to 'ovr'. Classification using logistic regression is a supervised learning method, and therefore requires a labeled dataset. You train the model by providing the model and the labeled dataset as an input to a module such as Train Model or Tune Model Hyperparameters. The trained model can then be used to predict values for new input examples. 
+
+            <h5>Multicalss Neural Network</h5><br>
+            In multi-class classification, the neural network has the same number of output nodes as the number of classes. Each output node belongs to some class and outputs a score for that class.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-19">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Fast Forest Quantile Regression</h5>
+          <p class="card-text"> Quantile regression is useful if you want to understand more about the distribution of the predicted value, rather than get a single mean prediction value. This method has many applications, including:
+
+<ul><li>Predicting prices</li>
+
+<li>Estimating student performance or applying growth charts to assess child development</li>
+
+<li>Discovering predictive relationships in cases where there is only a weak relationship between variables</li>
+
+<li>This regression algorithm is a supervised learning method, which means it requires a tagged dataset that includes a label column. Because it is a regression algorithm, the label column must contain only numerical values.</li></ul><br>
+The simplest definition of quantile is a value that divides a set of data into equal-sized groups; thus, the quantile values mark the boundaries between groups. Statistically speaking, quantiles are values taken at regular intervals from the inverse of the cumulative distribution function (CDF) of a random variable.<br>
+Quantile regression helps you understand the distribution of the predicted value. Tree-based quantile regression models, such as the one used in this module, have the additional advantage that they can be used to predict non-parametric distributions.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-20">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Linear Regression</h5>
+          <p class="card-text"> n statistics, linear regression is a linear approach to modelling the relationship between a scalar response and one or more explanatory variables (also known as dependent and independent variables). The case of one explanatory variable is called simple linear regression; for more than one, the process is called multiple linear regression. This term is distinct from multivariate linear regression, where multiple correlated dependent variables are predicted, rather than a single scalar variable.<br>
+
+In linear regression, the relationships are modeled using linear predictor functions whose unknown model parameters are estimated from the data. Such models are called linear models. Most commonly, the conditional mean of the response given the values of the explanatory variables (or predictors) is assumed to be an affine function of those values; less commonly, the conditional median or some other quantile is used. Like all forms of regression analysis, linear regression focuses on the conditional probability distribution of the response given the values of the predictors, rather than on the joint probability distribution of all of these variables, which is the domain of multivariate analysis.<br>
+<h5>Bayesian Linear Regression</h5><br>
+In the Bayesian viewpoint, we formulate linear regression using probability distributions rather than point estimates. The response, y, is not estimated as a single value, but is assumed to be drawn from a probability distribution.  The aim of Bayesian Linear Regression is not to find the single “best” value of the model parameters, but rather to determine the posterior distribution for the model parameters. Not only is the response generated from a probability distribution, but the model parameters are assumed to come from a distribution as well. 
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-22">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Decision Forest Regression</h5>
+          <p class="card-text"> A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.
+Random Forest has multiple decision trees as base learning models. We randomly perform row sampling and feature sampling from the dataset forming sample datasets for every model. This part is called Bootstrap.<br>
+
+
+            <h5>Boosted Decision Tree Regression</h5><br>
+            Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.
+
+In regression problems, boosting builds a series of trees in a step-wise fashion, and then selects the optimal tree using an arbitrary differentiable loss function.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-23">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Neuarl Network Regression</h5>
+          <p class="card-text"> Neural networks are reducible to regression models—a neural network can “pretend” to be any type of regression model. For example, this very simple neural network, with only one input neuron, one hidden neuron, and one output neuron, is equivalent to a logistic regression. It takes several dependent variables = input parameters, multiplies them by their coefficients = weights, and runs them through a sigmoid activation function and a unit step function, which closely resembles the logistic regression function with its error term. The neural network will perform gradient descent (to learn more see our in-depth guide on backpropagation ) to find coefficients that are better and fit the data, until it arrives at the optimal linear regression coefficients (or, in neural network terms, the optimal weights for the model).
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-27">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Two Class SVM</h5>
+          <p class="card-text"> An SVM is a machine learning technique based on Vapnik's Statistical Learning. Two-class support vector machines learn to distinguish between two. classes in a given data set by fitting a hyperplane that maximally divides both classes. This works well for data sets that are linearly separable. Support vector machines are among the earliest of machine learning algorithms, and SVM models have been used in many applications, from information retrieval to text and image classification. SVMs can be used for both classification and regression tasks.<br>
+             In the training process, the algorithm analyzes input data and recognizes patterns in a multi-dimensional feature space called the hyperplane. All input examples are represented as points in this space, and are mapped to output categories in such a way that categories are divided by as wide and clear a gap as possible.
+
+For prediction, the SVM algorithm assigns new examples into one category or the other, mapping them into that same space.
+
+
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-28">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Two Class Averaged Perception</h5>
+          <p class="card-text"> The averaged perceptron method is an early and very simple version of a neural network. In this approach, inputs are classified into several possible outputs based on a linear function, and then combined with a set of weights that are derived from the feature vector—hence the name "perceptron."<br>
+
+The simpler perceptron models are suited to learning linearly separable patterns, whereas neural networks (especially deep neural networks) can model more complex class boundaries. However, perceptrons are faster, and because they process cases serially, perceptrons can be used with continuous training.<br>
+This classification algorithm is a supervised learning method, and requires a tagged dataset, which includes a label column. You can train the model by providing the model and the tagged dataset as an input to Train Model or Tune Model Hyperparameters. The trained model can then be used to predict values for the new input examples.
+          </p>
+        </div>
+    </div>
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-30">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Two Class Decision Forest</h5>
+          <p class="card-text"> Two Class Desicion Forest is used to classify between two classes. A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap and Aggregation, commonly known as bagging. The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees.
+Random Forest has multiple decision trees as base learning models. We randomly perform row sampling and feature sampling from the dataset forming sample datasets for every model. This part is called Bootstrap.<br>
+
+
+            <h5>Two Class Boosted Decision Tree Regression</h5><br>
+            Two Class Boosted Decision Tree Regression is also used to classify between two classes.
+            Boosting is one of several classic methods for creating ensemble models, along with bagging, random forests, and so forth. Gradient boosting is a machine learning technique for regression problems. It builds each regression tree in a step-wise fashion, using a predefined loss function to measure the error in each step and correct for it in the next. Thus the prediction model is actually an ensemble of weaker prediction models.
+
+In regression problems, boosting builds a series of trees in a step-wise fashion, and then selects the optimal tree using an arbitrary differentiable loss function.
+          </p>
+        </div>
+    </div>
+
+  <!--   <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-12">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">One-v-All Multiclass</h5>
+          <p class="card-text"> 
+          </p>
+        </div>
+    </div> -->
+
+    <div class="card border-light mb-3 search" style="max-width: 44rem;" id="step-31">
+        <div class="card-header">Machine Learning Algorithm</div>
+        <div class="card-body">
+          <h5 class="card-title">Two Class Logistic Regression</h5>
+          <p class="card-text"> Two-Class Logistic Regression module to create a logistic regression model that can be used to predict two (and only two) outcomes. Logistic regression is a well-known statistical technique that is used for modeling any kind of problem. This classification algorithm is optimized for dichotomous or binary variables.
+            <h5>Two Class Neural Netwok</h5><br>
+            Two Class Neural Netwok is a neural network model that can be used to predict a target that has only two values. A neural network is a set of interconnected layers. The inputs are the first layer, and are connected to an output layer by an acyclic graph comprised of weighted edges and nodes.<br>
+
+Between the input and output layers you can insert multiple hidden layers. Most predictive tasks can be accomplished easily with only one or a few hidden layers. However, recent research has shown that deep neural networks (DNN) with many layers can be very effective in complex tasks such as image or speech recognition. The successive layers are used to model increasing levels of semantic depth.
+            <h5>Two Class Bayes Point Machine</h5><br>
+            Two Class Bayes Point Machine is used to create an untrained binary classification model. It is the Bayesian approach to linear classification called the "Bayes Point Machine". This algorithm efficiently approximates the theoretically optimal Bayesian average of linear classifiers (in terms of generalization performance) by choosing one "average" classifier, the Bayes Point. Because the Bayes Point Machine is a Bayesian classification model, it is not prone to overfitting to the training data.
+
+          </p>
+        </div>
+    </div>
+
+
+</div>
+</div>
+    
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $(".search").hide();
+            $(".step").hide();
+            $(".step-1").show();
+        });
+        function buttonclick(nextStep)
+        {
+            $("#step-"+nextStep).show()
+            $(".step-"+nextStep).fadeIn(500, function(){
+            	// $(".step-"+nextStep).show()
+            });
+            event.stopPropagation();
+        }
+
+      
+    </script>  -->
+    <script type="text/javascript" src="MACHINE.js"></script>
+
+</body>
+</html>

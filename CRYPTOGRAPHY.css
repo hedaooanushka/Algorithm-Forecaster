@@ -1,0 +1,51 @@
+
+#herocrypto {
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://cdn.pixabay.com/photo/2016/11/10/05/09/bitcoin-1813503_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-repeat: repeat;
+}
+#child1 {
+	width: 50%;
+	height: 100vh;
+	background: rgba(86, 86, 86, 0.3);
+	position: absolute;
+	left: 0;
+	right: 0;
+	backdrop-filter: blur(10px);
+}
+#child2 {
+	transform: translate(840px, 90px);
+	width: 620px;
+	height: 300px;
+}
+input {
+	background: transparent;
+	border: solid 2px white;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: white;
+	padding: 5px 15px;
+	margin-left: 40px;
+}
+#domain {
+	letter-spacing: 3px;
+	color: white; 
+	font-size: 25px; 
+	margin: 70px 230px;
+}
+#ans {
+	transform: translate(320px, 120px);
+	color: white;
+    font-size: 28px;
+}
+.step p {
+	color: white;
+	font-size: 20px;
+	margin-left: 40px;
+}

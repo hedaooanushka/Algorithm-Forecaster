@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="SORTING.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.5.1.min.js"></script> -->
+
+	<title>Searching Algorithms</title>
+</head>
+<body>
+	<!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="ALGORITHM.html" style="letter-spacing: 4px;"><i class="fa fa-code" aria-hidden="true"></i> ALGORITHM FORECASTER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="highlight">
+      <li class="nav-item">
+        <a class="nav-link" href="MACHINE.html" id="ml">Machine Learning <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MATHEMATICS.html" id="m">Mathematics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CRYPTOGRAPHY.html" id="c">Cryptography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SEARCHING.html" style="font-weight: bold; color: white;">Searching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SORTING.html" id="so">Sorting</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="herosearch">
+  <div id="child1">
+      <p id="domain" data-text="[Neon_Light]"> SEARCHING </p>
+        <div class="step step-1">
+          <form id="form">
+            <select name="Searching" id="search">
+              <option value="Linear-Search">My data is less and unsorted</option>
+              <option value="Binary-Search">My data is sorted</option>
+              <option value="Bellman-Ford">I want to search in a graph.</option>
+              <option value="Hash">I want to search more than one elements.</option>
+              <option value="Djkstra">I want to search the pivot element in the directed graph.</option>            
+              <input type="button" value="Click" id="click1">
+            </select>
+          </form>
+          <p id="ans"></p> 
+        </div>
+        </div>
+        <div id="child2">            
+          <div class="card border-light mb-3 Linear-Search search" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Searching Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Linear Search</h5>
+              <p class="card-text">A linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.  In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.<br>
+              <ul><li>Worst complexity: O(n)</li>
+              <li>Average complexity: O(n)</li>
+              <li>Space complexity: O(1)</li>
+              <li>Worst-case space complexity: O(1) iterative</li>
+              <li>Average performance: O(n/2)</li></ul>
+              A simple approach is to do a linear search:<br> 
+
+              <ul><li> from the leftmost element of arr[] and one by one compare x with each element of arr[]</li>
+              <li>If x matches with an element, return the index.</li>
+              <li>If x doesn’t match with any of elements, return -1.</li></ul>
+              </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Binary-Search search" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Searching Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Binary Search</h5>
+              <p class="card-text"> binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array.
+              <ul><li>Worst complexity: O(log n)</li>
+              <li>Average complexity: O(log n)</li>
+              <li>Best complexity: O(1)</li>
+              <li>Space complexity: O(1)</li>
+              <li>Data structure: Array</li></ul><br>
+              Binary search runs in logarithmic time in the worst case, making {\displaystyle O(\log n)}O(\log n) comparisons, where {\displaystyle n}n is the number of elements in the array.[a][6] Binary search is faster than linear search except for small arrays. However, the array must be sorted first to be able to apply binary search. There are specialized data structures designed for fast searching, such as hash tables, that can be searched more efficiently than binary search. However, binary search can be used to solve a wider range of problems, such as finding the next-smallest or next-largest element in the array relative to the target even if it is absent from the array.
+              </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Bellman-Ford search" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Searching Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Bellman Ford Algorithm</h5>
+              <p class="card-text">The Bellman–Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.[1] It is slower than Dijkstra's algorithm for the same problem, but more versatile, as it is capable of handling graphs in which some of the edge weights are negative numbers. The algorithm was first proposed by Alfonso Shimbel (1955), but is instead named after Richard Bellman and Lester Ford Jr., who published it in 1958 and 1956, respectively.[2] Edward F. Moore also published a variation of the algorithm in 1959, and for this reason it is also sometimes called the Bellman–Ford–Moore algorithm.
+                <ul><li>Class Single-source shortest path problem (for weighted directed graphs)</li>
+                    <li>Data structure  Graph</li>
+                    <li>Best Case Complexity  O(E)</li>
+                    <li>Average Case Complexity O(VE)</li>
+                    <li>Worst Case Complexity O(VE)</li></ul>
+              </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Hash search" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Searching Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Hash Function</h5>
+              <p class="card-text">A hash function is any function that can be used to map data of arbitrary size to fixed-size values. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes. The values are used to index a fixed-size table called a hash table. Use of a hash function to index a hash table is called hashing or scatter storage addressing.<br>
+
+Hash functions and their associated hash tables are used in data storage and retrieval applications to access data in a small and nearly constant time per retrieval, and storage space only fractionally greater than the total space required for the data or records themselves. Hashing is a computationally and storage space efficient form of data access which avoids the non-linear access time of ordered and unordered lists and structured trees, and the often exponential storage requirements of direct access of state spaces of large or variable-length keys.<br>
+
+Use of hash functions relies on statistical properties of key and function interaction: worst case behavior is intolerably bad with a vanishingly small probability, and average case behavior can be nearly optimal <br>
+              </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Djkstra search" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Searching Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Djkstra Algorithm</h5>
+              <p class="card-text">One algorithm for finding the shortest path from a starting node to a target node in a weighted graph is Dijkstra’s algorithm. The algorithm creates a tree of shortest paths from the starting vertex, the source, to all other points in the graph.<br>
+                The graph has the following:
+
+<ul><li>Vertices, or nodes, denoted in the algorithm by vv or uu</li>
+<li>Weighted edges that connect two nodes: (u,vu,v) denotes an edge, and w(u,v)w(u,v) denotes its weight.</li> </ul>
+The algorithm uses a greedy approach in the sense that we find the next best solution hoping that the end result is the best solution for the whole problem.
+Following are the main applications of Dijkstra’s Algorithm:
+
+<ul><li>It is most widely used in finding shortest possible distance and show directions between 2 geographical locations such as in Google Maps.</li>
+<li>This is also widely used in routing of data in networking and telecommunication domains for minimizing the delay occurred for transmission.</li>
+<li>Wherever you encounter the need for shortest path solutions be it in robotics, transportation, embedded systems, factory or production plants to detect faults, etc this algorithm is used.</li></ul>
+              </p>
+            </div>
+          </div>
+    
+<script type="text/javascript" src="SEARCHING.js"></script>       
+</body>
+</html>

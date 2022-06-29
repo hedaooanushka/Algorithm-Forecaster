@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="SORTING.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.5.1.min.js"></script> -->
+	<title>Searching Algorithms</title>
+</head>
+<body>
+	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="ALGORITHM.html" style="letter-spacing: 4px;"><i class="fa fa-code" aria-hidden="true"></i> ALGORITHM FORECASTER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="highlight">
+      <li class="nav-item">
+        <a class="nav-link" href="MACHINE.html" >Machine Learning <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MATHEMATICS.html" >Mathematics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CRYPTOGRAPHY.html">Cryptography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SEARCHING.html" >Searching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SORTING.html" style="font-weight: bold; color: white;">Sorting</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    <div id="herosort">
+        <div id="child1">
+            <p id="domain" data-text="[Neon_Light]"> SORTING </p>
+            <div class="step step-1">
+                <form id="form">
+                    <select name="Searching" id="search">
+                        <option value="Insertion">My data is less and unsorted</option>
+                        <option value="Merge">My data is big and unsorted</option>
+                        <option value="Quick">I am concerned about space complexity.</option>
+                        <option value="Merge">I am not concerned about space complexity.</option>
+                        <option value="Quick">I am interested in good-average case result.</option>
+                        <option value="Heap">I am concerned about worst case scenarios</option>
+                        <option value="Heap">I want faster algorithm irrespective of stability.</option>            
+                        <option value="Quick">The pivot point of the data is balanced.</option>  
+                        <option value="Bucket">The items are drawn from a dense universe.</option>            
+                        <input type="button" value="Click" id="click1">
+                    </select>
+                </form>
+                <p id="ans"></p> 
+            </div>
+        </div>
+        <div id="child2" >          
+          <div class="card border-light mb-3 Insertion sort" style="max-width: 70rem;" id="yo">
+            <div class="card-header">Sorting Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Insertion Sort</h5>
+              <p class="card-text">Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.<br>
+          <ul>
+            <li>Efficient for (quite) small data sets, much like other quadratic sorting algorithms</li>
+          <li>More efficient in practice than most other simple quadratic (i.e., O(n2)) algorithms such as selection sort or bubble sort</li>
+          <li>Adaptive, i.e., efficient for data sets that are already substantially sorted: the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position</li>
+          <li>Stable; i.e., does not change the relative order of elements with equal keys</li>
+          <li>In-place; i.e., only requires a constant amount O(1) of additional memory space</li></ul></p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Merge sort" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Sorting Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Merge Sort</h5>
+              <p class="card-text">Merge sort is a sorting technique based on divide and conquer technique. With worst-case time complexity being Ο(n log n), it is one of the most respected algorithms.
+
+          Merge sort first divides the array into equal halves and then combines them in a sorted manner.
+          The MergeSort function repeatedly divides the array into two halves until we reach a stage where we try to perform MergeSort on a subarray of size 1.
+
+          After that, the merge function comes into play and combines the sorted arrays into larger arrays until the whole array is merged. The top-down merge sort approach is the methodology which uses recursion mechanism. It starts at the Top and proceeds downwards, with each recursive turn asking the same question such as “What is required to be done to sort the array?” and having the answer as, “split the array into two, make a recursive call, and merge the results.”, until one gets to the bottom of the array-tree.</p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Quick sort" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Sorting Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Quick Sort</h5>
+              <p class="card-text">Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.<br>
+
+          Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst-case complexity are O(nLogn) and image.png(n2), respectively. Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.<br>
+
+          1) Always pick first element as pivot.<br>
+          2) Always pick last element as pivot. <br>
+          3) Pick a random element as pivot. <br>
+          4) Pick median as pivot. <br>
+
+          </p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Heap sort" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Sorting Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Heap Sort</h5>
+              <p class="card-text">Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for the remaining elements. It is an improved version of the binary search tree. It does not create a node as in case of binary search tree instead it builds the heap by adjusting the position of elements within the array itself.
+              <br><br>
+              Basically, there are two phases involved in the sorting of elements using heap sort algorithm they are as follows:<br>
+          1) First, start with the construction of a heap by adjusting the array elements.<br>
+          2) Once the heap is created repeatedly eliminate the root element of the heap by shifting it to the end of the array and then store the heap structure with remaining elements.</p>
+            </div>
+          </div>
+          <div class="card border-light mb-3 Bucket sort" style="max-width: 44rem;" id="yo">
+            <div class="card-header">Sorting Algorithm</div>
+            <div class="card-body">
+              <h5 class="card-title">Bucket Sort</h5>
+              <p class="card-text">Bucket Sort is a sorting technique that sorts the elements by first dividing the elements into several groups called buckets. The elements inside each bucket are sorted using any of the suitable sorting algorithms or recursively calling the same algorithm.
+
+          Several buckets are created. Each bucket is filled with a specific range of elements. The elements inside the bucket are sorted using any other algorithm. Finally, the elements of the bucket are gathered to get the sorted array.
+
+          The process of bucket sort can be understood as a scatter-gather approach. The elements are first scattered into buckets then the elements of buckets are sorted. Finally, the elements are gathered in order. Bucket sort is mainly useful when input is uniformly distributed over a range. 
+          Bucket sort works as follows:<br>
+
+          1) Set up an array of initially empty "buckets".<br>
+          2) Scatter: Go over the original array, putting each object in its bucket.<br>
+          3) Sort each non-empty bucket.<br>
+          4) Gather: Visit the buckets in order and put all elements back into the original array.<br></p>
+            </div>
+          </div>
+        </div>
+    </div>
+<script type="text/javascript" src="SORTING.js"></script>    
+</body>
+</html>

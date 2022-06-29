@@ -1,0 +1,212 @@
+
+<!-- https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260<!doctype html>
+https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+https://images.pexels.com/photos/1122528/pexels-photo-1122528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+
+https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+
+https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80
+https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260<!doctype html
+https://images.pexels.com/photos/1122528/pexels-photo-1122528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="ALGORITHM.css">
+    <title>Algorithm Forecaster</title>
+  </head>
+  <body>
+
+  	<!-- NavBar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="ALGORITHM.html" style="letter-spacing: 4px;"><i class="fa fa-code" aria-hidden="true"></i> ALGORITHM FORECASTER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="highlight">
+      <li class="nav-item">
+        <a class="nav-link" href="MACHINE.html" id="ml">Machine Learning <!-- <span class="sr-only">(current)</span> --></a>
+   )   </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MATHEMATICS.html" id="m">Mathematics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CRYPTOGRAPHY.html" id="c">Cryptography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SEARCHING.html" id="se">Searching</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="SORTING.html" id="so">Sorting</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active boxslide">
+      <img class="d-block w-100 pictures" src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>“We have two classes of forecasters: Those who don’t know — and those who don’t know they don’t know.”</h5>
+        <p>John Kenneth Galbraith</p>
+      </div>
+    </div>
+    <div class="carousel-item boxslide">
+      <img class="d-block w-100 pictures" src="https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>“Forecasts create the mirage that the future is knowable.”</h5>
+    <p>Peter L. Bernstein</p>
+  </div>
+    </div>
+    <div class="carousel-item boxslide">
+      <img id="clip" class="d-block w-100 pictures" src="https://images.pexels.com/photos/1122528/pexels-photo-1122528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Third slide" style="">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>“No amount of sophistication is going to allay the fact that all of your knowledge is about the past and all your decisions are about the future.” </h5>
+    <p>Ian Wilson</p>
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+<!-- Jumbotron -->
+<div class="jumbotron" style="margin-left: 100px; width: 1300px; margin-top: 20px;">
+  <h1 class="display-4">Welcome to Algorithm Forecaster!</h1>
+  <p class="lead" style="font-size: 24px;">Got stuck among the colossal range of algorithms and want to know the best suitable algorithm according to your needs? Then this is the right place for you!</p>
+  <hr class="my-4">
+  <p style="font-size: 18px;"> We have come across many coders facing the issue of finding the most relevant algorithm. Our Algorithm Forecaster will help you find the most appropriate kind of algorithm which will serve all your requirements. </p>
+</div>
+
+
+
+<!-- Domains -->
+<p style="padding-left: 260px; font-size: 30px; font-weight:600;">Machine Learning<span style="padding-left: 295px; font-size: 30px; font-weight:600;">Mathematics</span></p>
+<div class="container">
+	<a href="MACHINE.html">
+  <div class="box" style="justify-content: space-around;">
+    <div class="imgBx">
+    	<caption><h1>jelo</h1></caption>
+      <img src="https://specials-images.forbesimg.com/imageserve/5f4e95e4f671590c4412a595/960x0.jpg?fit=scale">
+    </div>
+    <div class="content">
+      <div>
+        <h2 style="letter-spacing: 4px;">MACHINE LEARNING</h2>
+        <p>Computer algorithms which automatically improve through experience without being explicitly programmed.</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="MATHEMATICS.html">
+  <div class="box">
+    <div class="imgBx">
+      <img src="https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/Mathematics%20and%20Statistics.jpg?itok=BhFtYMTo" class="img-fluid center">
+    </div>
+    <div class="content">
+      <div>
+        <h2 style="letter-spacing: 4px;">MATHEMATICS</h2>
+        <p style="color:white;">Mathematical computation through a description of set of steps to solve a class of problems.</p>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+
+<br><br><br><br>
+
+<p style="padding-left: 260px; font-size: 30px; font-weight:600;">Cryptography<span style="padding-left: 345px; font-size: 30px; font-weight:600;">Searching</span></p>
+<div class="container">  
+<a href="CRYPTOGRAPHY.html">
+  <div class="box">
+    <div class="imgBx">
+      <img class="img-fluid" style="background-size: cover;" src="crypto.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h2 style="color: white; text-transform: uppercase; letter-spacing: 4px;">Cryptography</h2>
+        <p style="color: white;">Encryption, Signature and Hashing serve to protect information and communications through codes.</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<a href="SEARCHING.html">
+  <div class="box">
+    <div class="imgBx">
+      <img src="https://searchengineland.com/figz/wp-content/seloads/2017/04/paid-search-165661541-ss-1920-800x450.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h2 style="color: white; text-transform: uppercase; letter-spacing: 4px;">Searching</h2>
+        <p style="color: white;">Solves the search problem to retrieve information by traversing through the dataset.</p>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+
+<br><br><br><br>
+
+<p style="padding-left: 528px; font-size: 30px; font-weight:600;">Sorting</p>
+<div class="container">
+<a href="SORTING.html">
+<div class="box">
+    <div class="imgBx">
+      <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1285853.jpg">
+    </div>
+    <div class="content">
+      <div>
+        <h2 style="color: white; text-transform: uppercase; letter-spacing: 4px;">Sorting</h2>
+        <p style="color: white;">Arranges elements in order and is important for optimizing the efficiency of other algorithms that require input data to be in sorted lists.</p>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+<script type="text/javascript">
+   $(document).ready(function() {
+            $(".search").hide();
+            $(".step").hide();
+            $(".step-1").show();
+        });
+</script>
+
+ 
+<br><br><br><br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+  </body>
+</html>
